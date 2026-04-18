@@ -7,17 +7,17 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
-    std::string secretWord = "завод";
+    std::string secretWord = "Р—Р°РІРѕРґ";
     std::string guessWord;
 
     do {
-        std::cout << "Угадайте слово: ";
+        std::cout << "РЈРіР°РґР°Р№С‚Рµ СЃР»РѕРІРѕ: ";
         std::cin >> guessWord;
         if (guessWord == secretWord) {
-            std::cout << "Правильно! Вы победили! Загаданное слово — " << secretWord << std::endl;
+            std::cout << "РџСЂР°РІРёР»СЊРЅРѕ! Р’С‹ РїРѕР±РµРґРёР»Рё! Р—Р°РіР°РґР°РЅРЅРѕРµ СЃР»РѕРІРѕ вЂ” " << secretWord << std::endl;
             break;
         } else {
-            std::cout << "Неправильно" << std::endl;
+            std::cout << "РќРµРїСЂР°РІРёР»СЊРЅРѕ ):" << std::endl;
         }
     } while (true);
 
